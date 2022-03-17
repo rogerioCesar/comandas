@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cardápio</title>
+	</head>
+	<body>
+		<h1>Relatório do Pedido</h1>
+		Burguer 1: X-Burguer</br>
+		Ingredientes:</br>
+		Preço: R$ 10,00</br>
+		Quantidade <p  th:text="${comanda.quantidade1}"></p></br>
+		
+		Burguer 2: X-Burguer</br>
+		Ingredientes:</br>
+		Preço: R$ 12,00</br>
+		Quantidade <p  th:text="${comanda.quantidade2}"></p></br>
+		
+		Burguer 3: X-Burguer</br>
+		Ingredientes:</br>
+		Preço: R$ 14,00</br>
+		Quantidade <p  th:text="${comanda.quantidade3}"></p></br>
+		
+		Total do pedido <b><span  th:text="${comanda.total}"></span></br></b>
+		</form>
+	</body>
+	</html>

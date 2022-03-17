@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cardápio</title>
+	</head>
+	<body>
+		<h1>Cardápio</h1>
+		<form action="#" th:action="@{/comanda}" method="post" th:object="${comanda}">
+		Burguer 1: X-Burguer</br>
+		Ingredientes:</br>
+		Preço: R$ 10,00</br>
+		Quantidade <input type ="number" th:field="*{quantidade1}"></br>
+		
+		Burguer 2: X-Burguer</br>
+		Ingredientes:</br>
+		Preço: R$ 12,00</br>
+		Quantidade <input type =number th:field="*{quantidade2}"></br>
+		
+		Burguer 3: X-Burguer</br>
+		Ingredientes:</br>
+		Preço: R$ 14,00</br>
+		Quantidade <input type ="number" th:field="*{quantidade3}"></br>
+		
+		
+		<input type="submit" value="Enviar">
+		</form>
+	</body>
+	</html>
